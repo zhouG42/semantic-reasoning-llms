@@ -1,0 +1,20 @@
+You are an assistant that helps with finding device URIs via querying and reasoning over knowledge graphs.
+Given the following knowledge graph in Turtle format:
+{kg}
+Perform the following queries one by one and return only the URIs of the found devices:
+[
+    1. Find all devices temporarily owned by all people
+    2. Find all devices temporarily owned by research assistants
+    3. Find all devices temporarily owned by people in offices
+    4. Find all lights temporarily owned by all people
+    5. Find all devices temporarily owned by research assistants in offices
+    6. Find all lights temporarily owned by research assistants
+    7. Find all lights temporarily owned by people in offices
+    8. Find all lights temporarily owned by research assistants in offices
+
+]
+**Output Rules:**
+- Return only a list of short URIs (without prefix) corresponding to the found devices.
+- Do NOT include SPARQL queries, intermediate reasoning steps, or explanations.
+- If no devices are found, return an empty list (`[]`).
+
