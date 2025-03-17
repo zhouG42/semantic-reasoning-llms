@@ -1,0 +1,154 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <http://example.com/ontology#> .
+@prefix schema: <https://schema.org/> .
+@prefix bot: <https://w3id.org/bot#> .
+
+
+<http://example.com/td/td1> rdf:type :Light ;
+                            :personalDevice true ;
+                            :hasMacAddress "xx1" .
+<http://example.com/td/td2> rdf:type :Light ;
+                            :personalDevice true ;
+                            :hasMacAddress "xx2" .
+<http://example.com/td/td3> rdf:type :Light ;
+                            :personalDevice true ;
+                            :hasMacAddress "xx3" .
+<http://example.com/td/td4> rdf:type :Light ;
+                            :personalDevice true ;
+                            :hasMacAddress "xx4" .
+<http://example.com/td/td5> rdf:type :Light ;
+                            :personalDevice true ;
+                            :hasMacAddress "xx5" .
+<http://example.com/td/td6> rdf:type :Light ;
+                            :personalDevice true ;
+                            :hasMacAddress "xx6" .
+<http://example.com/td/td7> rdf:type :Light ;
+                            :personalDevice true ;
+                            :hasMacAddress "xx7" .
+<http://example.com/td/td8> rdf:type :Light ;
+                            :personalDevice true ;
+                            :hasMacAddress "xx8" .
+<http://example.com/td/td9> rdf:type :Light ;
+                            :personalDevice true ;
+                            :hasMacAddress "xx9" .
+<http://example.com/td/td10> rdf:type :Light ;
+                            :personalDevice true ;
+                            :hasMacAddress "xx10" .
+<http://example.com/td/td11> rdf:type :Light ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx11" .
+<http://example.com/td/td12> rdf:type :Light ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx12" .
+<http://example.com/td/td13> rdf:type :Light ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx13" .
+<http://example.com/td/td14> rdf:type :Light ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx14" .
+<http://example.com/td/td15> rdf:type :Light ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx15" .
+<http://example.com/td/td16> rdf:type :Light ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx16" .
+
+<http://example.com/td/td17> rdf:type :Heater ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx17" .
+<http://example.com/td/td18> rdf:type :Heater ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx18" .
+<http://example.com/td/td19> rdf:type :Heater ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx19" .
+<http://example.com/td/td20> rdf:type :Heater ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx20" .
+<http://example.com/td/td21> rdf:type :Heater ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx21" .
+<http://example.com/td/td22> rdf:type :Heater ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx22" .
+<http://example.com/td/td23> rdf:type :Heater ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx23" .
+<http://example.com/td/td24> rdf:type :Heater ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx24" .
+<http://example.com/td/td25> rdf:type :Heater ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx25" .
+<http://example.com/td/td26> rdf:type :Heater ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx26" .
+
+<http://example.com/td/td27> rdf:type :Lock ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx27" .
+<http://example.com/td/td28> rdf:type :Lock ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx28" .
+
+<http://example.com/td/td29> rdf:type :Camera ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx29" .
+<http://example.com/td/td30> rdf:type :Camera ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx30" .
+
+<http://example.com/td/td31> rdf:type :AC ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx31" .
+
+<http://example.com/td/td32> rdf:type :TV ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx32" .
+
+<http://example.com/td/td33> rdf:type :Speaker;
+                            :personalDevice false ;
+                            :hasMacAddress "xx33" .
+
+<http://example.com/td/td34> rdf:type :Alarm ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx34" .
+
+<http://example.com/td/td35> rdf:type :LedStrip ;
+                            :personalDevice true ;
+                            :hasMacAddress "xx35" .
+
+<http://example.com/td/td36> rdf:type :Display ;
+                            :personalDevice true ;
+                            :hasMacAddress "xx36" .
+
+<http://example.com/td/td37> rdf:type :Radio ;
+                            :personalDevice true ;
+                            :hasMacAddress "xx37" .
+
+<http://example.com/td/td38> rdf:type :Kettle;
+                            :personalDevice true ;
+                            :hasMacAddress "xx38" .
+
+<http://example.com/td/td39> rdf:type :CoffeeMachine;
+                            :personalDevice true ;
+                            :hasMacAddress "xx39" .
+
+<http://example.com/td/td40> rdf:type :Microwave ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx40" .
+
+<http://example.com/td/td41> rdf:type :Dishwasher ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx41" .
+
+<http://example.com/td/td42> rdf:type :Dryer ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx42" .
+
+<http://example.com/td/td43> rdf:type :Ventilator ;
+                            :personalDevice false ;
+                            :hasMacAddress "xx43" .
+

@@ -1,0 +1,16 @@
+# Direct
+1. Find all devices in all rooms
+2. Find all devices in offices
+3. Find all lights in all rooms
+4. Find all lights in offices
+
+
+# Indirect
+1. Find all devices in all storeys
+2. Find all devices in storey 4
+3. Find all devices in offices in all storeys
+4. Find all lights in all storeys
+5. Find all devices contained in offices in storey 4
+6. Find all lights contained in storey 4
+7. Find all lights in offices in all storeys
+8. Find all lights in offices in storey 4

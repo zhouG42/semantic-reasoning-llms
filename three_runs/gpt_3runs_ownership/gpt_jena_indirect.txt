@@ -1,0 +1,214 @@
+```json
+{
+  "1": [
+    "td:td11",
+    "td:td12",
+    "td:td13",
+    "td:td14",
+    "td:td15",
+    "td:td16",
+    "td:td17",
+    "td:td18",
+    "td:td19",
+    "td:td20",
+    "td:td21",
+    "td:td22",
+    "td:td23",
+    "td:td24",
+    "td:td27",
+    "td:td29",
+    "td:td30",
+    "td:td32",
+    "td:td33",
+    "td:td34",
+    "td:td35",
+    "td:td36",
+    "td:td37",
+    "td:td38",
+    "td:td39"
+  ],
+  "2": [
+    "td:td12",
+    "td:td16",
+    "td:td18",
+    "td:td19",
+    "td:td20",
+    "td:td23",
+    "td:td24"
+  ],
+  "3": [
+    "td:td18",
+    "td:td19",
+    "td:td20",
+    "td:td21",
+    "td:td22",
+    "td:td23",
+    "td:td24"
+  ],
+  "4": [
+    "td:td11",
+    "td:td12",
+    "td:td13",
+    "td:td14",
+    "td:td15",
+    "td:td16",
+    "td:td18",
+    "td:td19",
+    "td:td20",
+    "td:td23",
+    "td:td24"
+  ],
+  "5": [
+    "td:td18",
+    "td:td19",
+    "td:td20",
+    "td:td23",
+    "td:td24"
+  ],
+  "6": [
+    "td:td12",
+    "td:td16",
+    "td:td18",
+    "td:td19",
+    "td:td20",
+    "td:td23",
+    "td:td24"
+  ],
+  "7": [
+    "td:td18",
+    "td:td19",
+    "td:td20",
+    "td:td23",
+    "td:td24"
+  ],
+  "8": [
+    "td:td18",
+    "td:td19",
+    "td:td20",
+    "td:td23",
+    "td:td24"
+  ]
+}
+```
+==================================
+1. Find all devices temporarily owned by all people:
+   - `["td:td11", "td:td35", "td:td36", "td:td37", "td:td12", "td:td38", "td:td39", "td:td10", "td:td26", "td:td25", "td:td9", "td:td23", "td:td7", "td:td22", "td:td6", "td:td24", "td:td8", "td:td14", "td:td30", "td:td34", "td:td13", "td:td27", "td:td29", "td:td16", "td:td32", "td:td33", "td:td15", "td:td28", "td:td31", "td:td1", "td:td17", "td:td19", "td:td3", "td:td18", "td:td2", "td:td20", "td:td4", "td:td21", "td:td5"]`
+
+2. Find all devices temporarily owned by research assistants:
+   - `["td:td11", "td:td35", "td:td36", "td:td37", "td:td19", "td:td3", "td:td16", "td:td32", "td:td33", "td:td18", "td:td2"]`
+
+3. Find all devices temporarily owned by people in offices:
+   - `["td:td10", "td:td26", "td:td25", "td:td9", "td:td23", "td:td7", "td:td22", "td:td6", "td:td24", "td:td8", "td:td1", "td:td17", "td:td19", "td:td3", "td:td18", "td:td2", "td:td20", "td:td4", "td:td21", "td:td5"]`
+
+4. Find all lights temporarily owned by all people:
+   - `["td:td11", "td:td10", "td:td9", "td:td7", "td:td6", "td:td8", "td:td14", "td:td16", "td:td15", "td:td1", "td:td3", "td:td2", "td:td4", "td:td5"]`
+
+5. Find all devices temporarily owned by research assistants in offices:
+   - `["td:td19", "td:td3", "td:td18", "td:td2"]`
+
+6. Find all lights temporarily owned by research assistants:
+   - `["td:td11", "td:td3", "td:td2"]`
+
+7. Find all lights temporarily owned by people in offices:
+   - `["td:td10", "td:td9", "td:td7", "td:td6", "td:td8", "td:td1", "td:td3", "td:td2", "td:td4", "td:td5"]`
+
+8. Find all lights temporarily owned by research assistants in offices:
+   - `["td:td3", "td:td2"]`
+==================================
+1. Find all devices temporarily owned by all people:
+   - `td:td11`
+   - `td:td12`
+   - `td:td13`
+   - `td:td14`
+   - `td:td15`
+   - `td:td16`
+   - `td:td17`
+   - `td:td18`
+   - `td:td19`
+   - `td:td20`
+   - `td:td21`
+   - `td:td22`
+   - `td:td23`
+   - `td:td24`
+   - `td:td25`
+   - `td:td26`
+   - `td:td27`
+   - `td:td28`
+   - `td:td29`
+   - `td:td30`
+   - `td:td31`
+   - `td:td32`
+   - `td:td33`
+   - `td:td34`
+   - `td:td35`
+   - `td:td36`
+   - `td:td37`
+   - `td:td38`
+   - `td:td39`
+
+2. Find all devices temporarily owned by research assistants:
+   - `td:td11`
+   - `td:td12`
+   - `td:td15`
+   - `td:td16`
+   - `td:td17`
+   - `td:td18`
+   - `td:td19`
+   - `td:td20`
+   - `td:td23`
+   - `td:td24`
+   - `td:td25`
+   - `td:td26`
+   - `td:td31`
+   - `td:td32`
+   - `td:td33`
+   - `td:td35`
+   - `td:td36`
+   - `td:td37`
+   - `td:td38`
+   - `td:td39`
+
+3. Find all devices temporarily owned by people in offices:
+   - `td:td8`
+   - `td:td9`
+   - `td:td10`
+   - `td:td18`
+   - `td:td19`
+   - `td:td20`
+   - `td:td21`
+   - `td:td22`
+   - `td:td23`
+   - `td:td24`
+   - `td:td25`
+   - `td:td26`
+
+4. Find all lights temporarily owned by all people:
+   - `td:td11`
+   - `td:td12`
+   - `td:td13`
+   - `td:td14`
+   - `td:td15`
+   - `td:td16`
+
+5. Find all devices temporarily owned by research assistants in offices:
+   - `td:td8`
+   - `td:td9`
+   - `td:td18`
+   - `td:td19`
+   - `td:td23`
+   - `td:td24`
+   - `td:td25`
+
+6. Find all lights temporarily owned by research assistants:
+   - `td:td11`
+   - `td:td12`
+   - `td:td15`
+   - `td:td16`
+
+7. Find all lights temporarily owned by people in offices:
+   - `td:td8`
+   - `td:td9`
+
+8. Find all lights temporarily owned by research assistants in offices:
+   - `td:td8`
+   - `td:td9`

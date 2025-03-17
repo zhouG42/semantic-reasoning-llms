@@ -1,0 +1,57 @@
+1. [td:td1, td:td10, td:td11, td:td12, td:td13, td:td14, td:td15, td:td16, td:td17, td:td18, td:td19, td:td2, td:td20, td:td21, td:td22, td:td23, td:td24, td:td25, td:td26, td:td27, td:td28, td:td29, td:td3, td:td30, td:td31, td:td32, td:td33, td:td34, td:td35, td:td36, td:td37, td:td38, td:td39, td:td4, td:td40, td:td41, td:td42, td:td43, td:td44, td:td45, td:td5, td:td6, td:td7, td:td8, td:td9]
+2. [td:td1, td:td15, td:td17, td:td18, td:td19, td:td3, td:td4, td:td6, td:td7, td:td8, td:td9, td:td32, td:td33]
+3. [td:td1, td:td10, td:td17, td:td18, td:td19, td:td20, td:td21, td:td22, td:td23, td:td24, td:td25, td:td26, td:td27, td:td3, td:td4, td:td5, td:td6, td:td7, td:td8, td:td9]
+4. [td:td1, td:td10, td:td11, td:td12, td:td13, td:td14, td:td15, td:td16, td:td2, td:td20, td:td21, td:td22, td:td23, td:td24, td:td25, td:td26, td:td3, td:td4, td:td5, td:td6, td:td7, td:td8, td:td9]
+5. [td:td18, td:td19, td:td3, td:td4]
+6. [td:td1, td:td15, td:td16, td:td32, td:td33]
+7. [td:td10, td:td17, td:td20, td:td21, td:td22, td:td23, td:td24, td:td25, td:td26, td:td3, td:td4, td:td5, td:td6, td:td7, td:td8, td:td9]
+8. [td:td3, td:td4]
+==================================
+1. [td:td1, td:td10, td:td11, td:td12, td:td13, td:td14, td:td15, td:td16, td:td17, td:td18, td:td19, td:td2, td:td20, td:td21, td:td22, td:td23, td:td24, td:td25, td:td26, td:td27, td:td28, td:td29, td:td3, td:td30, td:td31, td:td32, td:td33, td:td34, td:td35, td:td36, td:td37, td:td38, td:td39, td:td4, td:td40, td:td41, td:td42, td:td43, td:td44, td:td45, td:td5, td:td6, td:td7, td:td8, td:td9]
+2. [td:td1, td:td15, td:td16, td:td17, td:td18, td:td19, td:td20, td:td21, td:td22, td:td23, td:td24, td:td25, td:td26, td:td27, td:td28, td:td3, td:td31, td:td32, td:td33, td:td34, td:td35, td:td36, td:td37, td:td38, td:td39, td:td4, td:td40, td:td41, td:td42, td:td43, td:td44, td:td45, td:td5, td:td6, td:td7, td:td8, td:td9]
+3. [td:td1, td:td10, td:td17, td:td18, td:td19, td:td20, td:td21, td:td22, td:td23, td:td24, td:td25, td:td26, td:td5, td:td6, td:td7, td:td8, td:td9]
+4. [td:td1, td:td10, td:td11, td:td12, td:td13, td:td14, td:td15, td:td16, td:td2, td:td20, td:td21, td:td22, td:td23, td:td24, td:td25, td:td26, td:td27, td:td3, td:td4, td:td5, td:td6, td:td7, td:td8, td:td9]
+5. [td:td1, td:td17, td:td18, td:td19, td:td20, td:td21, td:td22, td:td23, td:td24, td:td25, td:td26, td:td5, td:td6, td:td7, td:td8, td:td9]
+6. [td:td1, td:td15, td:td16, td:td20, td:td21, td:td22, td:td23, td:td24, td:td25, td:td26, td:td3, td:td4, td:td5, td:td6, td:td7, td:td8, td:td9]
+7. [td:td1, td:td10, td:td2, td:td20, td:td21, td:td22, td:td23, td:td24, td:td25, td:td26, td:td3, td:td4, td:td5, td:td6, td:td7, td:td8, td:td9]
+8. [td:td1, td:td20, td:td21, td:td22, td:td23, td:td24, td:td25, td:td26, td:td3, td:td4, td:td5, td:td6, td:td7, td:td8, td:td9]
+==================================
+1. Find all devices in all storeys
+```
+[td:td1, td:td2, td:td3, td:td4, td:td5, td:td6, td:td7, td:td8, td:td9, td:td10, td:td11, td:td12, td:td13, td:td14, td:td15, td:td16, td:td17, td:td18, td:td19, td:td20, td:td21, td:td22, td:td23, td:td24, td:td25, td:td26, td:td27, td:td28, td:td29, td:td30, td:td31, td:td32, td:td33, td:td34, td:td35, td:td36, td:td37, td:td38, td:td39]
+```
+
+2. Find all devices in storey 4
+```
+[td:td1, td:td2, td:td3, td:td4, td:td15, td:td16, td:td17, td:td18, td:td19, td:td20, td:td21, td:td22, td:td23, td:td24, td:td25, td:td26, td:td27, td:td28, td:td31, td:td32, td:td33]
+```
+
+3. Find all devices in offices in all storeys
+```
+[td:td1, td:td2, td:td3, td:td4, td:td5, td:td6, td:td7, td:td8, td:td9, td:td10, td:td17, td:td18, td:td19, td:td20, td:td21, td:td22, td:td23, td:td24, td:td25, td:td26]
+```
+
+4. Find all lights in all storeys
+```
+[td:td1, td:td2, td:td3, td:td4, td:td5, td:td6, td:td7, td:td8, td:td9, td:td10, td:td11, td:td12, td:td13, td:td14, td:td15, td:td16, td:td24, td:td25, td:td26, td:td27, td:td28, td:td29, td:td30]
+```
+
+5. Find all devices contained in offices in storey 4
+```
+[td:td1, td:td2, td:td3, td:td4, td:td17, td:td18, td:td19, td:td20, td:td21, td:td22, td:td23, td:td24, td:td25, td:td26]
+```
+
+6. Find all lights contained in storey 4
+```
+[td:td1, td:td2, td:td3, td:td4, td:td15, td:td16]
+```
+
+7. Find all lights in offices in all storeys
+```
+[td:td1, td:td2, td:td3, td:td4, td:td5, td:td6, td:td7, td:td8, td:td9, td:td10, td:td17, td:td18, td:td19, td:td20, td:td21, td:td22, td:td23, td:td24, td:td25, td:td26]
+```
+
+8. Find all lights in offices in storey 4
+```
+[td:td1, td:td2, td:td3, td:td4, td:td17, td:td18, td:td19, td:td20, td:td21, td:td22, td:td23, td:td24, td:td25, td:td26]
+```

@@ -1,0 +1,180 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <http://example.com/ontology#> .
+@prefix schema: <https://schema.org/> .
+@prefix bot: <https://w3id.org/bot#> .
+
+
+:Wiso a bot:Building, schema:Place ;
+    rdfs:label "WiSo Campus FAU" ;
+    schema:publicAccess true ;
+    schema:containsPlace :Wintechis ;
+    bot:containsZone :Wintechis ;
+    bot:hasStorey :Storey1 ,
+                  :Storey2 ,
+                  :Storey3 ,
+                  :Storey4 .
+
+:Wintechis a schema:Organization, schema:Place, bot:Zone ;
+    rdfs:label "Chair of Technical Information Systems" ;
+    schema:containedInPlace :Wiso ;
+    bot:hasSpace <#4-444> ,
+    <#4-443> ,
+    <#4-442> ,
+    <#4-441> ,
+    <#3-334> ,
+    <#3-333> ,
+    <#3-332> ,
+    <#2-222> ,
+    <#2-221> .
+
+:Storey4 a bot:Storey ;
+    rdfs:label "WiSo 4th Floor" ;
+    bot:hasSpace <#4-444> ,
+    <#4-443> ,
+    <#4-442> ,
+    <#4-441> ,
+    <#4-436> ,
+    <#4-435> .
+
+:Storey3 a bot:Storey ;
+    rdfs:label "WiSo 3rd Floor" ;
+    bot:hasSpace <#3-334> ,
+    <#3-333> ,
+    <#3-332> ,
+    <#3-331> ,
+    <#3-326> ,
+    <#3-325> .
+
+:Storey2 a bot:Storey ;
+    rdfs:label "WiSo 2nd Floor" ;
+    bot:hasSpace <#2-222> ,
+    <#2-221> ,
+    <#2-216> ,
+    <#2-215> .
+
+
+<#4-444> a bot:Space, schema:Place, :Office ;
+    rdfs:label "WiSo 4.444" ;
+    schema:publicAccess false ;
+    bot:adjacentZone <#4-443> ;
+    bot:containsElement <http://example.com/td/td1> ,
+                        <http://example.com/td/td17> .
+
+<#4-443> a bot:Space, schema:Place, :Office ;
+    rdfs:label "WiSo 4.443" ;
+    schema:publicAccess false ;
+    bot:adjacentZone <#4-442>, <#4-444> ;
+    bot:containsElement <http://example.com/td/td2> ,
+                        <http://example.com/td/td18> ,
+                        <http://example.com/td/td38> .
+
+<#4-442> a bot:Space, schema:Place, :Office ;
+    rdfs:label "WiSo 4.442" ;
+    schema:publicAccess false ;
+    bot:adjacentZone <#4-441>, <#4-443> ;
+    bot:containsElement <http://example.com/td/td3> ,
+                        <http://example.com/td/td19> ,
+                        <http://example.com/td/td35> .
+
+<#4-441> a bot:Space, schema:Place, :Office ;
+    rdfs:label "WiSo 4.441" ;
+    schema:publicAccess false ;
+    bot:adjacentZone <#4-442> ;
+    bot:containsElement <http://example.com/td/td4> ,
+                        <http://example.com/td/td20> .
+
+<#3-334> a bot:Space, schema:Place, :Office ;
+    rdfs:label "WiSo 3.334" ;
+    schema:publicAccess false ;
+    bot:adjacentZone <#3-333> ;
+    bot:containsElement <http://example.com/td/td5> ,
+                        <http://example.com/td/td21> .
+
+<#3-333> a bot:Space, schema:Place, :Office ;
+    rdfs:label "WiSo 3.333" ;
+    schema:publicAccess false ;
+    bot:adjacentZone <#3-332>, <#3-334> ;
+    bot:containsElement <http://example.com/td/td6> ,
+                        <http://example.com/td/td22> ,
+                        <http://example.com/td/td37> .
+
+<#3-332> a bot:Space, schema:Place, :Office ;
+    rdfs:label "WiSo 3.332" ;
+    schema:publicAccess false ;
+    bot:adjacentZone <#3-331>, <#3-333> ;
+    bot:containsElement <http://example.com/td/td7> ,
+                        <http://example.com/td/td23> ,
+                        <http://example.com/td/td36> .
+
+<#3-331> a bot:Space, schema:Place, :Office ;
+    rdfs:label "WiSo 3.331" ;
+    schema:publicAccess false ;
+    bot:adjacentZone <#3-332> ;
+    bot:containsElement <http://example.com/td/td8> ,
+                        <http://example.com/td/td24> .
+
+<#2-222> a bot:Space, schema:Place, :Office ;
+    rdfs:label "WiSo 2.222" ;
+    schema:publicAccess false ;
+    bot:adjacentZone <#2-221> ;
+    bot:containsElement <http://example.com/td/td9> ,
+                        <http://example.com/td/td25> .
+
+<#2-221> a bot:Space, schema:Place, :Office ;
+    rdfs:label "Secretary" ;
+    schema:publicAccess false ;
+    bot:adjacentZone <#2-222> ;
+    bot:containsElement <http://example.com/td/td10> ,
+                        <http://example.com/td/td26> ,
+                        <http://example.com/td/td39> .
+
+<#2-216> a bot:Space, schema:Place, :Room ;
+    rdfs:label "Kitchen" ;
+    schema:publicAccess true ;
+    bot:adjacentZone <#2-215> ;
+    bot:containsElement <http://example.com/td/td11> ,
+                        <http://example.com/td/td40> ,
+                        <http://example.com/td/td41> .
+
+<#2-215> a bot:Space, schema:Place, :Room ;
+    rdfs:label "Toilet" ;
+    schema:publicAccess true ;
+    bot:adjacentZone <#2-216> ;
+    bot:containsElement <http://example.com/td/td12> ,
+                        <http://example.com/td/td42> ,
+                        <http://example.com/td/td43> .
+
+<#3-326> a bot:Space, schema:Place, :Room ;
+    rdfs:label "Technical Room" ;
+    schema:publicAccess false ;
+    bot:adjacentZone <#3-325> ;
+    bot:containsElement <http://example.com/td/td13> ,
+                        <http://example.com/td/td27> ,
+                        <http://example.com/td/td29> .
+
+<#3-325> a bot:Space, schema:Place, :Room ;
+    rdfs:label "Copy Room" ;
+    schema:publicAccess true ;
+    bot:adjacentZone <#3-326> ;
+    bot:containsElement <http://example.com/td/td14> ,
+                        <http://example.com/td/td30> ,
+                        <http://example.com/td/td34> .
+
+<#4-436> a bot:Space, schema:Place, :Lab ;
+    rdfs:label "IoT Lab" ;
+    schema:publicAccess false ;
+    bot:adjacentZone <#4-435> ;
+    bot:containsElement <http://example.com/td/td15>,
+                        <http://example.com/td/td28> ,
+                        <http://example.com/td/td31> .
+
+<#4-435> a bot:Space, schema:Place, :Room ;
+    rdfs:label "Meeting Room" ;
+    schema:publicAccess false ;
+    bot:adjacentZone <#4-436> ;
+    bot:containsElement <http://example.com/td/td16> ,
+                        <http://example.com/td/td32> ,
+                        <http://example.com/td/td33> .
+

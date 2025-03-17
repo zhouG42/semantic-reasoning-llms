@@ -1,0 +1,77 @@
+Here is the output for each query:
+
+1. Find all devices temporarily owned by all people
+`[td:td41, td:td45, td:td42, td:td40, td:td43, td:td44]`
+
+2. Find all devices temporarily owned by research assistants
+`[td:td41, td:td45, td:td40, td:td43, td:td44]`
+
+3. Find all devices temporarily owned by people in offices
+`[td:td41, td:td45, td:td42, td:td40, td:td43, td:td44]`
+
+4. Find all lights temporarily owned by all people
+`[]`
+
+5. Find all devices temporarily owned by research assistants in offices
+`[td:td41, td:td45, td:td40, td:td43, td:td44]`
+
+6. Find all lights temporarily owned by research assistants
+`[]`
+
+7. Find all lights temporarily owned by people in offices
+`[]`
+
+8. Find all lights temporarily owned by research assistants in offices
+`[]`
+==================================
+Here is the output for each query:
+
+1. Find all devices temporarily owned by all people
+`[td:td41, td:td45, td:td42, td:td40, td:td43, td:td44]`
+
+2. Find all devices temporarily owned by research assistants
+`[td:td41, td:td45, td:td40, td:td43, td:td44]`
+
+3. Find all devices temporarily owned by people in offices
+`[td:td41, td:td45, td:td42, td:td40, td:td43, td:td44]`
+
+4. Find all lights temporarily owned by all people
+`[]`
+
+5. Find all devices temporarily owned by research assistants in offices
+`[td:td41, td:td45, td:td40, td:td43, td:td44]`
+
+6. Find all lights temporarily owned by research assistants
+`[]`
+
+7. Find all lights temporarily owned by people in offices
+`[]`
+
+8. Find all lights temporarily owned by research assistants in offices
+`[]`
+==================================
+Here is the output for each query:
+
+1. Find all devices temporarily owned by all people
+`[td:td41, td:td45, td:td42, td:td40, td:td43, td:td44]`
+
+2. Find all devices temporarily owned by research assistants
+`[td:td41, td:td45, td:td40, td:td43, td:td44]`
+
+3. Find all devices temporarily owned by people in offices
+`[td:td41, td:td45, td:td42, td:td40, td:td43, td:td44]`
+
+4. Find all lights temporarily owned by all people
+`[]`
+
+5. Find all devices temporarily owned by research assistants in offices
+`[td:td41, td:td45, td:td40, td:td43, td:td44]`
+
+6. Find all lights temporarily owned by research assistants
+`[]`
+
+7. Find all lights temporarily owned by people in offices
+`[]`
+
+8. Find all lights temporarily owned by research assistants in offices
+`[]`

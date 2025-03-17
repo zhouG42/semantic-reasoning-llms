@@ -1,0 +1,4 @@
+transformers
+openai==0.28.0
+matplotlib
+anthropic

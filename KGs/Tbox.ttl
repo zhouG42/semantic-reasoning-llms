@@ -1,0 +1,147 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <http://example.org/ontology#> .
+@prefix schema: <https://schema.org/> .
+@prefix bot: <https://w3id.org/bot#> .
+
+
+schema:memberOf a rdf:Property ;
+    rdfs:label "Member Of" ;
+    rdfs:domain schema:Person ;
+    rdfs:range schema:Organization ;
+    rdfs:comment "Indicates the Membership of a Person in an Organization." .
+
+schema:jobTitle a rdf:Property ;
+    rdfs:label "Job Title" ;
+    rdfs:domain schema:Person ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Indicates the Job Title of a Person." .
+
+schema:colleague a rdf:Property ;
+    rdfs:label "Colleague Of" ;
+    rdfs:domain schema:Person ;
+    rdfs:range schema:Person ;
+    rdfs:comment "Indicates that two People are Colleagues." .
+
+schema:workLocation a rdf:Property ;
+    rdfs:label "Work Location" ;
+    rdfs:domain schema:Person ;
+    rdfs:range bot:Space, schema:Place ;
+    rdfs:comment "Indicates the Work Location of a Person." .
+
+schema:publicAccess a rdf:Property ;
+    rdfs:label "Public Access" ;
+    rdfs:domain bot:Space, schema:Place ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether a Space has Public Access or Not." .
+
+bot:adjacentZone a rdf:Property ;
+    rdfs:label "Adjacent Zone" ;
+    rdfs:domain bot:Space, schema:Place ;
+    rdfs:range bot:Space, schema:Place ;
+    rdfs:comment "Indicates that two Spaces are Adjacent." .
+
+bot:containsElement a rdf:Property ;
+    rdfs:label "Contains Element" ;
+    rdfs:domain bot:Space, schema:Place ;
+    rdfs:range :Device ;
+    rdfs:comment "Indicates that a Space contains a Device." .
+
+:hasMacAddress a rdf:Property ;
+    rdfs:label "Has Mac Address" ;
+    rdfs:domain :Device ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Indicates Device Mac Address." .
+
+:personalDevice a rdf:Property ;
+    rdfs:label "Is Personal Device" ;
+    rdfs:domain :Device ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether a Device is Personal or Not." .
+
+
+:Office a rdfs:Class ;
+    rdfs:label "Office" ;
+    rdfs:subClassOf bot:Space, schema:Place .
+
+:Room a rdfs:Class ;
+    rdfs:label "Room" ;
+    rdfs:subClassOf bot:Space, schema:Place .
+
+:Lab a rdfs:Class ;
+    rdfs:label "Lab" ;
+    rdfs:subClassOf bot:Space, schema:Place .
+
+
+:Device a rdfs:Class ;
+    rdfs:label "Device" .
+
+:Light a rdfs:Class ;
+    rdfs:label "Light" ;
+    rdfs:subClassOf :Device .
+
+:Heater a rdfs:Class ;
+    rdfs:label "Heater" ;
+    rdfs:subClassOf :Device .
+
+:Lock a rdfs:Class ;
+    rdfs:label "Lock" ;
+    rdfs:subClassOf :Device .
+
+:Camera a rdfs:Class ;
+    rdfs:label "Camera" ;
+    rdfs:subClassOf :Device .
+
+:AC a rdfs:Class ;
+    rdfs:label "AC" ;
+    rdfs:subClassOf :Device .
+
+:TV a rdfs:Class ;
+    rdfs:label "TV" ;
+    rdfs:subClassOf :Device .
+
+:Speaker a rdfs:Class ;
+    rdfs:label "Speaker" ;
+    rdfs:subClassOf :Device .
+
+:Alarm a rdfs:Class ;
+    rdfs:label "Alarm" ;
+    rdfs:subClassOf :Device .
+
+:LedStrip a rdfs:Class ;
+    rdfs:label "LED Strip" ;
+    rdfs:subClassOf :Device .
+
+:Display a rdfs:Class ;
+    rdfs:label "Display" ;
+    rdfs:subClassOf :Device .
+
+:Radio a rdfs:Class ;
+    rdfs:label "Radio" ;
+    rdfs:subClassOf :Device .
+
+:Kettle a rdfs:Class ;
+    rdfs:label "Kettle" ;
+    rdfs:subClassOf :Device .
+
+:CoffeeMachine a rdfs:Class ;
+    rdfs:label "Coffee Machine" ;
+    rdfs:subClassOf :Device .
+
+:Microwave a rdfs:Class ;
+    rdfs:label "Microwave" ;
+    rdfs:subClassOf :Device .
+
+:Dishwasher a rdfs:Class ;
+    rdfs:label "Dishwasher" ;
+    rdfs:subClassOf :Device .
+
+:Dryer a rdfs:Class ;
+    rdfs:label "Dryer" ;
+    rdfs:subClassOf :Device .
+
+:Ventilator a rdfs:Class ;
+    rdfs:label "Ventilator" ;
+    rdfs:subClassOf :Device .
+

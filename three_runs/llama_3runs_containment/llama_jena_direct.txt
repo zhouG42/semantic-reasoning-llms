@@ -1,0 +1,160 @@
+**Query 1: Find all devices in all rooms**
+
+td:td12
+td:td38
+td:td39
+td:td11
+td:td35
+td:td36
+td:td37
+td:td13
+td:td27
+td:td29
+td:td14
+td:td30
+td:td34
+td:td16
+td:td32
+td:td33
+td:td15
+td:td28
+td:td31
+td:td24
+td:td8
+td:td21
+td:td5
+td:td1
+td:td17
+td:td10
+td:td26
+td:td25
+td:td9
+td:td23
+td:td7
+td:td22
+td:td6
+td:td20
+td:td4
+td:td19
+td:td3
+td:td18
+td:td2
+
+**Query 2: Find all devices in offices**
+
+td:td24
+td:td8
+td:td21
+td:td5
+td:td1
+td:td17
+td:td10
+td:td26
+td:td25
+td:td9
+td:td23
+td:td7
+td:td22
+td:td6
+td:td20
+td:td4
+td:td19
+td:td3
+td:td18
+td:td2
+
+**Query 3: Find all lights in all rooms**
+
+td:td12
+td:td11
+td:td13
+td:td14
+td:td16
+td:td15
+td:td24
+td:td8
+td:td21
+td:td5
+td:td1
+td:td17
+td:td10
+td:td26
+td:td25
+td:td9
+td:td23
+td:td7
+td:td22
+td:td6
+td:td20
+td:td4
+td:td19
+td:td3
+td:td18
+td:td2
+
+**Query 4: Find all lights in offices**
+
+td:td24
+td:td8
+td:td21
+td:td5
+td:td1
+td:td17
+td:td10
+td:td26
+td:td25
+td:td9
+td:td23
+td:td7
+td:td22
+td:td6
+td:td20
+td:td4
+td:td19
+td:td3
+td:td18
+td:td2
+==================================
+Here are the results of the queries:
+
+1. Find all devices in all rooms
+```
+[td:td12, td:td11, td:td35, td:td36, td:td37, td:td13, td:td27, td:td29, td:td14, td:td30, td:td34, td:td16, td:td32, td:td33, td:td15, td:td28, td:td31, td:td24, td:td8, td:td21, td:td5, td:td1, td:td17, td:td10, td:td26, td:td25, td:td9, td:td23, td:td7, td:td22, td:td6, td:td20, td:td4, td:td19, td:td3, td:td18, td:td2]
+```
+
+2. Find all devices in offices
+```
+[td:td24, td:td8, td:td21, td:td5, td:td1, td:td17, td:td10, td:td26, td:td25, td:td9, td:td23, td:td7, td:td22, td:td6, td:td20, td:td4, td:td19, td:td3, td:td18, td:td2]
+```
+
+3. Find all lights in all rooms
+```
+[td:td12, td:td11, td:td13, td:td14, td:td16, td:td15, td:td24, td:td8, td:td21, td:td5, td:td1, td:td17, td:td10, td:td26, td:td25, td:td9, td:td23, td:td7, td:td22, td:td6, td:td20, td:td4, td:td19, td:td3, td:td18, td:td2]
+```
+
+4. Find all lights in offices
+```
+[td:td24, td:td8, td:td21, td:td5, td:td1, td:td17, td:td10, td:td26, td:td25, td:td9, td:td23, td:td7, td:td22, td:td6, td:td20, td:td4, td:td19, td:td3, td:td18, td:td2]
+```
+==================================
+Here are the results of the queries:
+
+1. Find all devices in all rooms
+```
+[td:td12, td:td11, td:td35, td:td36, td:td37, td:td13, td:td27, td:td29, td:td14, td:td30, td:td34, td:td16, td:td32, td:td33, td:td15, td:td28, td:td31, td:td24, td:td8, td:td21, td:td5, td:td1, td:td17, td:td10, td:td26, td:td25, td:td9, td:td23, td:td7, td:td22, td:td6, td:td20, td:td4, td:td19, td:td3, td:td18, td:td2]
+```
+
+2. Find all devices in offices
+```
+[td:td24, td:td8, td:td21, td:td5, td:td1, td:td17, td:td10, td:td26, td:td25, td:td9, td:td23, td:td7, td:td22, td:td6, td:td20, td:td4, td:td19, td:td3, td:td18, td:td2]
+```
+
+3. Find all lights in all rooms
+```
+[td:td12, td:td11, td:td13, td:td14, td:td16, td:td15, td:td24, td:td8, td:td21, td:td5, td:td1, td:td17, td:td10, td:td26, td:td25, td:td9, td:td23, td:td7, td:td22, td:td6, td:td20, td:td4, td:td19, td:td3, td:td18, td:td2]
+```
+
+4. Find all lights in offices
+```
+[td:td24, td:td8, td:td21, td:td5, td:td1, td:td17, td:td10, td:td26, td:td25, td:td9, td:td23, td:td7, td:td22, td:td6, td:td20, td:td4, td:td19, td:td3, td:td18, td:td2]
+```

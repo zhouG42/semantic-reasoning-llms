@@ -1,0 +1,26 @@
+#Direct
+1. Find all personal devices
+2. Find all personal devices owned by research assistants
+3. Find all personal lights
+4. Find all personal devices owned by external phd students
+5. Find all personal speakers
+6. Find all personal kettles
+7. Find all personal LED strips
+8. Find all personal radios
+9. Find all personal lights owned by research assistants
+10. Find all personal speakers owned by research assistants
+11. Find all personal kettles owned by research assistants
+12. Find all personal LED strips owned by research assistants
+13. Find all personal lights owned by external phd students
+14. Find all personal radios owned by external phd students
+
+
+# Indirect
+1. Find all devices temporarily owned by all people
+2. Find all devices temporarily owned by research assistants
+3. Find all devices temporarily owned by people in offices
+4. Find all lights temporarily owned by all people
+5. Find all devices temporarily owned by research assistants in offices
+6. Find all lights temporarily owned by research assistants
+7. Find all lights temporarily owned by people in offices
+8. Find all lights temporarily owned by research assistants in offices

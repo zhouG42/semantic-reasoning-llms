@@ -1,0 +1,585 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <https://schema.org/> .
+@prefix bot: <https://w3id.org/bot#> .
+@prefix : <http://example.com/ontology#> .
+@prefix data: <http://example.com/data#> .
+@prefix people: <http://example.com/data/people/> .
+@prefix places: <http://example.com/data/places/> .
+@prefix devices: <http://example.com/data/devices/> .
+@prefix td: <http://example.com/data/td/> .
+@prefix rooms: <http://example.com/data/rooms/> .
+
+
+people:Daniel a schema:Person ;
+    schema:givenName "Daniel" ;
+    schema:memberOf :Wintechis;
+    schema:jobTitle "Research Assistant" ;
+    schema:colleague people:Sebastian, people:Thomas, people:Zhou, people:Marco, people:Micheal, people:Rene, people:Tim, people:Andreas, people:Monika, people:Layla ;
+    schema:workLocation rooms:R4_441 ;
+    :currentLocation rooms:R4_441 .
+
+people:Thomas a schema:Person ;
+    schema:givenName "Thomas" ;
+    schema:memberOf :Wintechis ;
+    schema:jobTitle "Research Assistant" ;
+    schema:colleague people:Daniel, people:Zhou, people:Marco, people:Micheal, people:Rene, people:Tim, people:Andreas, people:Monika, people:Layla ;
+    schema:workLocation rooms:R4_442 ;
+    :currentLocation rooms:R4_442 ;
+    :ownsElement td:td40 .
+
+people:Zhou a schema:Person ;
+    schema:givenName "Zhou" ;
+    schema:memberOf :Wintechis ;
+    schema:jobTitle "Research Assistant" ;
+    schema:colleague people:Daniel, people:Sebastian, people:Thomas, people:Marco, people:Micheal, people:Rene, people:Tim, people:Andreas, people:Monika, people:Layla ;
+    schema:workLocation rooms:R4_443 ;
+    :currentLocation rooms:R3_325 ;
+    :ownsElement td:td43, td:td44 .
+
+people:Sebastian a schema:Person ;
+    schema:givenName "Sebastian" ;
+    schema:memberOf :Wintechis ;
+    schema:jobTitle "Research Assistant" ;
+    schema:colleague people:Daniel, people:Thomas, people:Zhou, people:Marco, people:Micheal, people:Rene, people:Tim, people:Andreas, people:Monika, people:Layla ;
+    schema:workLocation rooms:R4_444 ;
+    :currentLocation rooms:R2_216 ;
+    :ownsElement td:td41 .
+
+people:Marco a schema:Person ;
+    schema:givenName "Marco" ;
+    schema:memberOf :Wintechis;
+    schema:jobTitle "External PhD Student" ;
+    schema:colleague people:Daniel, people:Sebastian, people:Thomas, people:Zhou, people:Micheal, people:Rene, people:Tim, people:Andreas, people:Monika, people:Layla ;
+    schema:workLocation rooms:R3_331 ;
+    :currentLocation rooms:R4_435 .
+
+people:Micheal a schema:Person ;
+    schema:givenName "Micheal" ;
+    schema:memberOf :Wintechis;
+    schema:jobTitle "External PhD Student" ;
+    schema:colleague people:Daniel, people:Sebastian, people:Thomas, people:Zhou, people:Marco, people:Rene, people:Tim, people:Andreas, people:Monika, people:Layla ;
+    schema:workLocation rooms:R3_332 ;
+    :currentLocation rooms:R4_436 ;
+    :ownsElement td:td45 .
+
+people:Rene a schema:Person ;
+    schema:givenName "Rene" ;
+    schema:memberOf :Wintechis;
+    schema:jobTitle "External PhD Student" ;
+    schema:colleague people:Daniel, people:Sebastian, people:Thomas, people:Zhou, people:Marco, people:Micheal, people:Tim, people:Andreas, people:Monika, people:Layla ;
+    schema:workLocation rooms:R3_333 ;
+    :currentLocation rooms:R3_333 ;
+    :ownsElement td:td42 .
+
+people:Tim a schema:Person ;
+    schema:givenName "Tim" ;
+    schema:memberOf :Wintechis;
+    schema:jobTitle "External PhD Student" ;
+    schema:colleague people:Daniel, people:Sebastian, people:Thomas, people:Zhou, people:Marco, people:Micheal, people:Rene, people:Andreas, people:Monika, people:Layla ;
+    schema:workLocation rooms:R3_334 ;
+    :currentLocation "Unavailable" .
+
+people:Monika a schema:Person ;
+    schema:givenName "Monika" ;
+    schema:memberOf :Wintechis;
+    schema:jobTitle "Secretary" ;
+    schema:colleague people:Daniel, people:Sebastian, people:Thomas, people:Zhou, people:Marco, people:Micheal, people:Rene, people:Tim, people:Andreas, people:Layla ;
+    schema:workLocation rooms:R2_221 ;
+    :currentLocation rooms:R2_221 .
+
+people:Andreas a schema:Person ;
+    schema:givenName "Andreas" ;
+    schema:memberOf :Wintechis;
+    schema:jobTitle "Chairholder" ;
+    schema:colleague people:Daniel, people:Sebastian, people:Thomas, people:Zhou, people:Marco, people:Micheal, people:Rene, people:Tim, people:Monika, people:Layla ;
+    schema:workLocation rooms:R2_222 ;
+    :currentLocation rooms:R2_222 .
+
+people:Layla a schema:Person ;
+    schema:givenName "Layla" ;
+    schema:memberOf :Wintechis ;
+    schema:jobTitle "Student Assistant" ;
+    schema:colleague people:Daniel, people:Sebastian, people:Thomas, people:Zhou, people:Marco, people:Micheal, people:Rene, people:Tim, people:Andreas, people:Monika ;
+    schema:workLocation rooms:R4_443 ;
+    :currentLocation rooms:R4_443 .
+
+
+places:Wiso a bot:Building, schema:Place ;
+    rdfs:label "WiSo Campus FAU" ;
+    schema:publicAccess true ;
+    schema:containsPlace places:Wintechis ;
+    bot:containsZone places:Wintechis ;
+    bot:hasStorey places:Storey1 ,
+                  places:Storey2 ,
+                  places:Storey3 ,
+                  places:Storey4 .
+
+places:Wintechis a schema:Organization, schema:Place, bot:Zone ;
+    rdfs:label "Chair of Technical Information Systems" ;
+    schema:containedInPlace places:Wiso ;
+    schema:containsPlace rooms:R4_444 ,
+    rooms:R4_443 ,
+    rooms:R4_442 ,
+    rooms:R4_441 ,
+    rooms:R3_334 ,
+    rooms:R3_333 ,
+    rooms:R3_332 ,
+    rooms:R3_331 ,
+    rooms:R2_222 ,
+    rooms:R2_221 .
+
+places:Storey4 a bot:Storey ;
+    rdfs:label "WiSo 4th Floor" ;
+    bot:hasSpace rooms:R4_444 ,
+    rooms:R4_443 ,
+    rooms:R4_442 ,
+    rooms:R4_441 ,
+    rooms:R4_436 ,
+    rooms:R4_435 .
+
+places:Storey3 a bot:Storey ;
+    rdfs:label "WiSo 3rd Floor" ;
+    bot:hasSpace rooms:R3_334 ,
+    rooms:R3_333 ,
+    rooms:R3_332 ,
+    rooms:R3_331 ,
+    rooms:R3_326 ,
+    rooms:R3_325 .
+
+places:Storey2 a bot:Storey ;
+    rdfs:label "WiSo 2nd Floor" ;
+    bot:hasSpace rooms:R2_222 ,
+    rooms:R2_221 ,
+    rooms:R2_216 ,
+    rooms:R2_215 .
+
+
+rooms:R4_444 a bot:Space, schema:Place, :Office ;
+    rdfs:label "WiSo 4.444" ;
+    schema:publicAccess false ;
+    bot:adjacentZone rooms:R4_443 ;
+    bot:containsElement td:td1 ,
+                        td:td17 .
+
+rooms:R4_443 a bot:Space, schema:Place, :Office ;
+    rdfs:label "WiSo 4.443" ;
+    schema:publicAccess false ;
+    bot:adjacentZone rooms:R4_442, rooms:R4_444 ;
+    bot:containsElement td:td2 ,
+                        td:td18 .
+
+rooms:R4_442 a bot:Space, schema:Place, :Office ;
+    rdfs:label "WiSo 4.442" ;
+    schema:publicAccess false ;
+    bot:adjacentZone rooms:R4_441, rooms:R4_443 ;
+    bot:containsElement td:td3 ,
+                        td:td19 .
+
+rooms:R4_441 a bot:Space, schema:Place, :Office ;
+    rdfs:label "WiSo 4.441" ;
+    schema:publicAccess false ;
+    bot:adjacentZone rooms:R4_442 ;
+    bot:containsElement td:td4 ,
+                        td:td20 .
+
+rooms:R3_334 a bot:Space, schema:Place, :Office ;
+    rdfs:label "WiSo 3.334" ;
+    schema:publicAccess false ;
+    bot:adjacentZone rooms:R3_333 ;
+    bot:containsElement td:td5 ,
+                        td:td21 .
+
+rooms:R3_333 a bot:Space, schema:Place, :Office ;
+    rdfs:label "WiSo 3.333" ;
+    schema:publicAccess false ;
+    bot:adjacentZone rooms:R3_332, rooms:R3_334 ;
+    bot:containsElement td:td6 ,
+                        td:td22 .
+
+rooms:R3_332 a bot:Space, schema:Place, :Office ;
+    rdfs:label "WiSo 3.332" ;
+    schema:publicAccess false ;
+    bot:adjacentZone rooms:R3_331, rooms:R3_333 ;
+    bot:containsElement td:td7 ,
+                        td:td23 .
+
+rooms:R3_331 a bot:Space, schema:Place, :Office ;
+    rdfs:label "WiSo 3.331" ;
+    schema:publicAccess false ;
+    bot:adjacentZone rooms:R3_332 ;
+    bot:containsElement td:td8 ,
+                        td:td24 .
+
+rooms:R2_222 a bot:Space, schema:Place, :Office ;
+    rdfs:label "WiSo 2.222" ;
+    schema:publicAccess false ;
+    bot:adjacentZone rooms:R2_221 ;
+    bot:containsElement td:td9 ,
+                        td:td25 .
+
+rooms:R2_221 a bot:Space, schema:Place, :Office ;
+    rdfs:label "Secretary" ;
+    schema:publicAccess false ;
+    bot:adjacentZone rooms:R2_222 ;
+    bot:containsElement td:td10 ,
+                        td:td26 .
+
+rooms:R2_216 a bot:Space, schema:Place, :Utility ;
+    rdfs:label "Kitchen" ;
+    schema:publicAccess true ;
+    bot:adjacentZone rooms:R2_215 ;
+    bot:containsElement td:td11 ,
+                        td:td35 ,
+                        td:td36 ,
+                        td:td37 .
+
+rooms:R2_215 a bot:Space, schema:Place, :Utility ;
+    rdfs:label "Toilet" ;
+    schema:publicAccess true ;
+    bot:adjacentZone rooms:R2_216 ;
+    bot:containsElement td:td12 ,
+                        td:td38 ,
+                        td:td39 .
+
+rooms:R3_326 a bot:Space, schema:Place, :Utility ;
+    rdfs:label "Technical Room" ;
+    schema:publicAccess false ;
+    bot:adjacentZone rooms:R3_325 ;
+    bot:containsElement td:td13 ,
+                        td:td27 ,
+                        td:td29 .
+
+rooms:R3_325 a bot:Space, schema:Place, :Utility ;
+    rdfs:label "Copy Room" ;
+    schema:publicAccess true ;
+    bot:adjacentZone rooms:R3_326 ;
+    bot:containsElement td:td14 ,
+                        td:td30 ,
+                        td:td34 .
+
+rooms:R4_436 a bot:Space, schema:Place, :Lab ;
+    rdfs:label "IoT Lab" ;
+    schema:publicAccess false ;
+    bot:adjacentZone rooms:R4_435 ;
+    bot:containsElement td:td15,
+                        td:td28 ,
+                        td:td31 .
+
+rooms:R4_435 a bot:Space, schema:Place, :Utility ;
+    rdfs:label "Meeting Room" ;
+    schema:publicAccess false ;
+    bot:adjacentZone rooms:R4_436 ;
+    bot:containsElement td:td16 ,
+                        td:td32 ,
+                        td:td33 .
+
+
+td:td1 a devices:Light ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx1" .
+td:td2 a devices:Light ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx2" .
+td:td3 a devices:Light ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx3" .
+td:td4 a devices:Light ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx4" .
+td:td5 a devices:Light ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx5" .
+td:td6 a devices:Light ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx6" .
+td:td7 a devices:Light ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx7" .
+td:td8 a devices:Light ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx8" .
+td:td9 a devices:Light ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx9" .
+td:td10 a devices:Light ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx10" .
+td:td11 a devices:Light ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx11" .
+td:td12 a devices:Light ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx12" .
+td:td13 a devices:Light ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx13" .
+td:td14 a devices:Light ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx14" .
+td:td15 a devices:Light ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx15" .
+td:td16 a devices:Light ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx16" .
+
+td:td17 a devices:Heater ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx17" .
+td:td18 a devices:Heater ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx18" .
+td:td19 a devices:Heater ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx19" .
+td:td20 a devices:Heater ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx20" .
+td:td21 a devices:Heater ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx21" .
+td:td22 a devices:Heater ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx22" .
+td:td23 a devices:Heater ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx23" .
+td:td24 a devices:Heater ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx24" .
+td:td25 a devices:Heater ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx25" .
+td:td26 a devices:Heater ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx26" .
+
+td:td27 a devices:Lock ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx27" .
+td:td28 a devices:Lock ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx28" .
+
+td:td29 a devices:Camera ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx29" .
+td:td30 a devices:Camera ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx30" .
+
+td:td31 a devices:AC ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx31" .
+
+td:td32 a devices:TV ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx32" .
+
+td:td33 a devices:Display;
+                        :personalDevice false ;
+                        :hasMacAddress "xx33" .
+
+td:td34 a devices:Alarm ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx34" .
+
+td:td35 a devices:Microwave ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx35" .
+
+td:td36 a devices:Dishwasher ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx36" .
+                        
+td:td37 a devices:CoffeeMachine;
+                        :personalDevice false ;
+                        :hasMacAddress "xx37" .
+
+td:td38 a devices:Dryer ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx38" .
+
+td:td39 a devices:Ventilator ;
+                        :personalDevice false ;
+                        :hasMacAddress "xx39" .
+
+td:td40 a devices:LedStrip ;
+                        :personalDevice true ;
+                        :hasMacAddress "xx40" .
+
+td:td41 a devices:Speaker ;
+                        :personalDevice true ;
+                        :hasMacAddress "xx41" .
+
+td:td42 a devices:Radio ;
+                        :personalDevice true ;
+                        :hasMacAddress "xx42" .
+
+td:td43 a devices:Kettle;
+                        :personalDevice true ;
+                        :hasMacAddress "xx43" .
+                        
+td:td44 a devices:Light ;
+                        :personalDevice true ;
+                        :hasMacAddress "xx44" .
+
+td:td45 a devices:Light;
+                        :personalDevice true ;
+                        :hasMacAddress "xx45" .
+
+
+schema:memberOf a rdf:Property ;
+    rdfs:label "Member Of" ;
+    rdfs:domain schema:Person ;
+    rdfs:range schema:Organization ;
+    rdfs:comment "Indicates the Membership of a Person in an Organization." .
+
+schema:jobTitle a rdf:Property ;
+    rdfs:label "Job Title" ;
+    rdfs:domain schema:Person ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Indicates the Job Title of a Person." .
+
+schema:colleague a rdf:Property ;
+    rdfs:label "Colleague Of" ;
+    rdfs:domain schema:Person ;
+    rdfs:range schema:Person ;
+    rdfs:comment "Indicates that two People are Colleagues." .
+
+schema:workLocation a rdf:Property ;
+    rdfs:label "Work Location" ;
+    rdfs:domain schema:Person ;
+    rdfs:range bot:Space, schema:Place ;
+    rdfs:comment "Indicates the Work Location/Office of a Person." .
+
+schema:publicAccess a rdf:Property ;
+    rdfs:label "Public Access" ;
+    rdfs:domain bot:Space, schema:Place ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether a Space has Public Access or Not." .
+
+bot:adjacentZone a rdf:Property ;
+    rdfs:label "Adjacent Zone" ;
+    rdfs:domain bot:Space, schema:Place ;
+    rdfs:range bot:Space, schema:Place ;
+    rdfs:comment "Indicates that two Spaces are Adjacent." .
+
+bot:containsElement a rdf:Property ;
+    rdfs:label "Contains Element" ;
+    rdfs:domain bot:Space, schema:Place ;
+    rdfs:range :Device ;
+    rdfs:comment "Indicates that a Space contains a Device." .
+
+:hasMacAddress a rdf:Property ;
+    rdfs:label "Has Mac Address" ;
+    rdfs:domain :Device ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Indicates Device Mac Address." .
+
+:personalDevice a rdf:Property ;
+    rdfs:label "Is Personal Device" ;
+    rdfs:domain :Device ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether a Device is Personal or Not." .
+
+:ownsElement a rdf:Property ;
+    rdfs:label "Owns Device" ;
+    rdfs:domain schema:Person ;
+    rdfs:range :Device ;
+    rdfs:comment "Indicates the Device owned by a Person." .
+
+:currentLocation a rdf:Property ;
+    rdfs:label "Current Location" ;
+    rdfs:domain schema:Person ;
+    rdfs:range bot:Space, schema:Place, rdf:Literal ;
+    rdfs:comment "Indicates the Current Location of a Person." .
+
+
+:Office a rdfs:Class ;
+    rdfs:label "Office" ;
+    rdfs:subClassOf bot:Space, schema:Place .
+
+:Utility a rdfs:Class ;
+    rdfs:label "Utility Room" ;
+    rdfs:subClassOf bot:Space, schema:Place .
+
+:Lab a rdfs:Class ;
+    rdfs:label "Lab" ;
+    rdfs:subClassOf bot:Space, schema:Place .
+
+
+:Device a rdfs:Class ;
+    rdfs:label "Device" .
+
+devices:Light a rdfs:Class ;
+    rdfs:label "Light" ;
+    rdfs:SubClassOf :Device .
+
+devices:Heater a rdfs:Class ;
+    rdfs:label "Heater" ;
+    rdfs:SubClassOf :Device .
+
+devices:Lock a rdfs:Class ;
+    rdfs:label "Lock" ;
+    rdfs:SubClassOf :Device .
+
+devices:Camera a rdfs:Class ;
+    rdfs:label "Camera" ;
+    rdfs:SubClassOf :Device .
+
+devices:AC a rdfs:Class ;
+    rdfs:label "AC" ;
+    rdfs:SubClassOf :Device .
+
+devices:TV a rdfs:Class ;
+    rdfs:label "TV" ;
+    rdfs:SubClassOf :Device .
+
+devices:Speaker a rdfs:Class ;
+    rdfs:label "Speaker" ;
+    rdfs:SubClassOf :Device .
+
+devices:Alarm a rdfs:Class ;
+    rdfs:label "Alarm" ;
+    rdfs:SubClassOf :Device .
+
+devices:LedStrip a rdfs:Class ;
+    rdfs:label "LED Strip" ;
+    rdfs:SubClassOf :Device .
+
+devices:Display a rdfs:Class ;
+    rdfs:label "Display" ;
+    rdfs:SubClassOf :Device .
+
+devices:Radio a rdfs:Class ;
+    rdfs:label "Radio" ;
+    rdfs:SubClassOf :Device .
+
+devices:Kettle a rdfs:Class ;
+    rdfs:label "Kettle" ;
+    rdfs:SubClassOf :Device .
+
+devices:CoffeeMachine a rdfs:Class ;
+    rdfs:label "Coffee Machine" ;
+    rdfs:SubClassOf :Device .
+
+devices:Microwave a rdfs:Class ;
+    rdfs:label "Microwave" ;
+    rdfs:SubClassOf :Device .
+
+devices:Dishwasher a rdfs:Class ;
+    rdfs:label "Dishwasher" ;
+    rdfs:SubClassOf :Device .
+
+devices:Dryer a rdfs:Class ;
+    rdfs:label "Dryer" ;
+    rdfs:SubClassOf :Device .
+
+devices:Ventilator a rdfs:Class ;
+    rdfs:label "Ventilator" ;
+    rdfs:SubClassOf :Device .
+
+

@@ -1,0 +1,84 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <http://example.com/ontology#> .
+@prefix schema: <https://schema.org/> .
+@prefix bot: <https://w3id.org/bot#> .
+
+
+:Daniel a schema:Person ;
+    schema:givenName "Daniel" ;
+    schema:memberOf :Wintechis;
+    schema:jobTitle "Research Assistant" ;
+    schema:colleague :Sebastian, :Thomas, :Marco, :Micheal, :Rene, :Tim, :Andreas, :Monika, :Layla ;
+    schema:workLocation <#4-441> .
+
+:Tim a schema:Person ;
+    schema:givenName "Tim" ;
+    schema:memberOf :Wintechis;
+    schema:jobTitle "External PhD Student" ;
+    schema:colleague :Daniel, :Sebastian, :Thomas, :Zhou, :Marco, :Micheal, :Rene, :Andreas, :Monika, :Layla ;
+    schema:workLocation <#4-442> .
+
+:Zhou a schema:Person ;
+    schema:givenName "Zhou" ;
+    schema:memberOf :Wintechis ;
+    schema:jobTitle "Research Assistant" ;
+    schema:colleague :Daniel, :Sebastian, :Thomas, :Marco, :Micheal, :Rene, :Tim, :Andreas, :Monika, :Layla ;
+    schema:workLocation <#4-443> .
+
+:Sebastian a schema:Person ;
+    schema:givenName "Sebastian" ;
+    schema:memberOf :wintechis ;
+    schema:jobTitle "Research Assistant" ;
+    schema:colleague :Daniel, :Thomas, :Zhou, :Marco, :Micheal, :Rene, :Tim, :Andreas, :Monika ;
+    schema:workLocation <#4-444> .
+
+:Micheal a schema:Person ;
+    schema:givenName "Micheal" ;
+    schema:memberOf :Wintechis;
+    schema:jobTitle "External PhD Student" ;
+    schema:colleague :Daniel, :Sebastian, :Thomas, :Zhou, :Marco, :Rene, :Tim, :Andreas, :Monika, :Layla ;
+    schema:workLocation <#4-436> .
+
+:Monika a schema:Person ;
+    schema:givenName "Monika" ;
+    schema:memberOf :Wintechis;
+    schema:jobTitle "Secretary" ;
+    schema:colleague :Daniel, :Sebastian, :Thomas, :Zhou, :Marco, :Micheal, :Rene, :Tim, :Andreas, :Layla ;
+    schema:workLocation <#2-221> .
+
+:Andreas a schema:Person ;
+    schema:givenName "Andreas" ;
+    schema:memberOf :Wintechis;
+    schema:jobTitle "Chairholder" ;
+    schema:colleague :Daniel, :Sebastian, :Thomas, :Zhou, :Marco, :Micheal, :Rene, :Tim, :Monika, :Layla ;
+    schema:workLocation <#2-222> .
+
+:Marco a schema:Person ;
+    schema:givenName "Marco" ;
+    schema:jobTitle "External PhD Student" ;
+    schema:colleague :Daniel, :Sebastian, :Thomas, :Zhou, :Micheal, :Rene, :Tim, :Andreas, :Monika, :Layla ;
+    schema:workLocation <#3-331> .
+
+:Rene a schema:Person ;
+    schema:givenName "Rene" ;
+    schema:memberOf :Wintechis;
+    schema:jobTitle "External PhD Student" ;
+    schema:colleague :Daniel, :Sebastian, :Thomas, :Zhou, :Marco, :Micheal, :Tim, :Andreas, :Monika, :Layla ;
+    schema:workLocation <#3-333> .
+
+:Thomas a schema:Person ;
+    schema:givenName "Thomas" ;
+    schema:memberOf :Wintechis ;
+    schema:jobTitle "Research Assistant" ;
+    schema:colleague :Daniel, :Zhou, :Marco, :Micheal, :Rene, :Tim, :Andreas, :Monika, :Layla ;
+    schema:workLocation <#3-334> .
+
+:Layla a schema:Person ;
+    schema:givenName "Layla" ;
+    schema:memberOf :Wintechis ;
+    schema:jobTitle "Student Assistant" ;
+    schema:colleague :Daniel, :Thomas, :Zhou, :Marco, :Micheal, :Rene, :Tim, :Andreas, :Monika ;
+    schema:workLocation <#4-443> .
+

@@ -1,0 +1,83 @@
+```json
+[
+    // 1. Find all personal devices
+    ["td:td40", "td:td41", "td:td42", "td:td43", "td:td44", "td:td45"],
+    
+    // 2. Find all personal devices owned by research assistants
+    ["td:td40", "td:td44"],
+    
+    // 3. Find all personal lights
+    ["td:td44", "td:td45"],
+    
+    // 4. Find all personal devices owned by external phd students
+    ["td:td42"],
+    
+    // 5. Find all personal speakers
+    ["td:td41"],
+    
+    // 6. Find all personal kettles
+    ["td:td43"],
+    
+    // 7. Find all personal LED strips
+    ["td:td40"],
+    
+    // 8. Find all personal radios
+    ["td:td42"],
+    
+    // 9. Find all personal lights owned by research assistants
+    ["td:td44"],
+    
+    // 10. Find all personal speakers owned by research assistants
+    [],
+    
+    // 11. Find all personal kettles owned by research assistants
+    [],
+    
+    // 12. Find all personal LED strips owned by research assistants
+    ["td:td40"],
+    
+    // 13. Find all personal lights owned by external phd students
+    [],
+    
+    // 14. Find all personal radios owned by external phd students
+    ["td:td42"]
+]
+```
+==================================
+```json
+[
+    ["td:td40", "td:td41", "td:td42", "td:td43", "td:td44", "td:td45"],
+    ["td:td40", "td:td43", "td:td44"],
+    ["td:td44", "td:td45"],
+    ["td:td42"],
+    ["td:td41"],
+    ["td:td43"],
+    ["td:td40"],
+    ["td:td42"],
+    ["td:td44"],
+    ["td:td41"],
+    [],
+    ["td:td40"],
+    ["td:td45"],
+    ["td:td42"]
+]
+```
+==================================
+```json
+[
+    ["td:td40", "td:td41", "td:td42", "td:td43", "td:td44", "td:td45"],
+    ["td:td40", "td:td43", "td:td44"],
+    ["td:td44", "td:td45"],
+    ["td:td42"],
+    ["td:td41"],
+    ["td:td43"],
+    ["td:td40"],
+    ["td:td42"],
+    ["td:td44"],
+    ["td:td41"],
+    [],
+    ["td:td40"],
+    ["td:td45"],
+    ["td:td42"]
+]
+```
